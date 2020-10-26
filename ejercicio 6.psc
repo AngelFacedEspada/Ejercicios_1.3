@@ -1,5 +1,6 @@
-SubAlgoritmo rellenar_matriz(filas,columnas,mTabla)
-	Definir n, m Como Entero;
+SubAlgoritmo rellenarmatriz(filas, columnas,mTabla)
+	
+	Definir n,m Como Entero;
 	
 	Para n=0 Hasta filas-1 Con Paso 1 Hacer
 		Para m=0 Hasta columnas-1 Con Paso 1 Hacer
@@ -8,14 +9,10 @@ SubAlgoritmo rellenar_matriz(filas,columnas,mTabla)
 	Fin Para
 FinSubAlgoritmo
 
-SubAlgoritmo escribir_tabla(filas,columnas,mTabla)
+SubAlgoritmo escribirtabla(filas, columnas,mTabla)
 	
-	Escribir "cuantas filas quieres";
-	leer filas;
-	Escribir "cuantas columnas quieres";
-	leer columnas;
-	Definir n, m Como Entero;
-	rellenar_matriz(filas, columnas,mTabla);
+	Definir n,m Como Entero;
+	rellenarmatriz(filas, columnas,mTabla);
 	
 	Para n=0 Hasta filas-1 Con Paso 1 Hacer
 		Para m=0 Hasta columnas-1 Con Paso 1 Hacer
@@ -29,3 +26,23 @@ SubAlgoritmo escribir_tabla(filas,columnas,mTabla)
 	
 FinSubAlgoritmo
 
+
+
+
+Algoritmo Ejercicio6
+	
+	Definir mTabla, filas, columnas Como Entero;
+	
+	Escribir "Dime cuantas filas quieres que tenga tu tabla";
+	leer filas;
+	
+	Escribir "Dime cuantas columnas quieres que tenga tu tabla";
+	leer columnas;
+	
+	Dimension mTabla[filas,columnas];
+	
+	escribirtabla(filas, columnas,mTabla);
+	
+	
+	
+FinAlgoritmo
